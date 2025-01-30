@@ -4,3 +4,4 @@
 - chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://philarchive.org/archive/HUBBAD [2]
 - https://www.geeksforgeeks.org/probability-theory/ [3]
 - https://www.geeksforgeeks.org/utility-based-agents-in-ai/ [4]
+- https://www.geeksforgeeks.org/probabilistic-notation-in-ai/ [5]

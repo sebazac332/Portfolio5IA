@@ -70,3 +70,39 @@ Esta teoria sugere que cada possível resultado de uma decisão é atribuído um
 ### Teoria da decisão
 
 Combina o valor de utilidade dado pela teoria da utilidade de um estado junto com a probabilidade desse estado ocorrer, depois faz decisões levando estes dois fatores em conta. A ideia fundamental da teoria da decisão é que um agente é racional se e somente se ele escolher a ação que produz a maior utilidade esperada, calculada a média de todos os resultados possíveis da ação. Isso é chamado de princípio da utilidade máxima esperada (MEU). [1]
+
+## Notação básica de probabilidade​
+
+Refere-se aos símbolos e convenções usados para representar e manipular probabilidades e conceitos estatísticos. Essa notação é fundamental em campos como estatística, aprendizado de máquina e inteligência artificial, onde lidar com a incerteza e a variabilidade é crucial. [5]
+
+### Notações
+
+- Probabilidade de um evento A ocorrer: P(A)
+    - Conjunto de probabilidades de todos os possíveis valores de A é conhecida como distribuição de probabilidade.
+    - Probabilidade de todos os possíveis resultados de um evento A:
+        - P(A = a) = 0.25 (25% de probabilidade do resultado de A ser a)
+        - P(A = b) = 0.25 (25% de probabilidade do resultado de A ser b)
+        - P(A = c) = 0.25 (25% de probabilidade do resultado de A ser b)
+        - P(A = d) = 0.25 (25% de probabilidade do resultado de A ser b)
+    - Forma abreviada de todos os possíveis resultados:
+        - P(A) = <0.25,0.25,0.25,0.25>
+    - Quando se tem um rango finito e discreto, se conhece como distribuição categórica.
+    - O conjunto de todos os valores possíveis de A quando A é uma variável contínua:
+        - P(A = x) = Uniform(x,10,18)
+    - Significa que os valores de A estão uniformemente distribuídos entre 10 e 18.
+    - Essa representação é conhecida como função de densidade de probabilidade.
+- Probabilidade de um evento A não ocorrer: P(¬A)
+    - Relação entre a probabilidade de um evento acontecer e a probabilidade de não acontecer:
+        - P(¬A) = 1 - P(A)
+- Probabilidade de um evento A e um evento B ocorrerem ao mesmo tempo: P(A ∧ B)
+    - Representação de todos os valores possíveis de A e B: P(A,B) = P(A|B)P(B)
+    - Essa representação é conhecida como distribuição conjunta de probabilidade e é a distribuição da probabilidade de que os eventos A e B ocorram simultaneamente.
+    - Um modelo de probabilidade é completamente determinado pela distribuição conjunta de todas as variáveis ​​aleatórias, as chamadas distribuição de probabilidade conjunta completa. [1]
+- Probabilidade de um evento A ou evento B ocorrer: P(A ∨ B)
+    - Para calcular a probabilidade da disjunção P(A ∨ B) usa-se o princípio de inclusão-exclusão:
+        - P(A ∨ B) = P(A) + P(B) − P(A ∧ B) .
+- Probabilidade de um evento A acontecer e um evento B não acontecer: P(A ∧ ¬B)
+- Probabilidade de não ocorrer um evento A ou ocorrer um evento B: P(¬A ∨ B)
+- A probabilidade de ocorrência do evento A, considerando que o evento B tenha ocorrido (Probabilidade condicional): P(A|B) -> P(A ∧ B)/P(B)
+    - Forma alternativa chamada regra de produto: P(A ∧ B) = P(A|B)P(B)
+- Teorema de Bayes, que fornece uma maneira de atualizar as probabilidades com base em novos dados: P(A|B) = P(B)P(B∣A)*P(A)
