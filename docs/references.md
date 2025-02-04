@@ -5,3 +5,7 @@
 - https://www.geeksforgeeks.org/probability-theory/ [3]
 - https://www.geeksforgeeks.org/utility-based-agents-in-ai/ [4]
 - https://www.geeksforgeeks.org/probabilistic-notation-in-ai/ [5]
+
+# Referencias de codigos
+## Cadena de Markov
+- https://www.datacamp.com/tutorial/markov-chains-python-tutorial

@@ -1,5 +1,14 @@
 site_name: Portfólio 5 de Inteligência Artificial
 
+markdown_extensions:
+  - pymdownx.arithmatex
+  - admonition
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/MathJax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+
 theme:
    name: material 
    palette:
