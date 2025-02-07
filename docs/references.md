@@ -7,5 +7,5 @@
 - https://www.geeksforgeeks.org/probabilistic-notation-in-ai/ [5]
 
 # Referencias de codigos
-## Cadena de Markov
-- https://www.datacamp.com/tutorial/markov-chains-python-tutorial
+## Kalman filter
+- https://www.geeksforgeeks.org/kalman-filter-in-python/
