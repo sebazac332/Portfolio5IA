@@ -5,6 +5,9 @@
 - https://www.geeksforgeeks.org/probability-theory/ [3]
 - https://www.geeksforgeeks.org/utility-based-agents-in-ai/ [4]
 - https://www.geeksforgeeks.org/probabilistic-notation-in-ai/ [5]
+- https://www.geeksforgeeks.org/bayes-theorem/ [6]
+- https://www.geeksforgeeks.org/naive-bayes-classifiers/ [7]
+- https://www.ibm.com/think/topics/naive-bayes [8]
 
 # Referencias de codigos
 ## Kalman filter
