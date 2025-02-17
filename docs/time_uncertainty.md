@@ -1,0 +1,5 @@
+# Tempo e Incerteza​
+
+**Problemas estáticos:** São problemas encontrados em mundos estáticos, nos quais cada variável aleatória tem um único valor fixo. Um exemplo disso seria quando vamos reparar um carro, podemos assumir que o que estava quebrado continuará quebrado independente do tempo que levarmos para o diagnóstico. [1]
+
+**Problemas dinâmicos:** Elementos dinâmicos são introduzidos ao problema, de modo que os valores das variáveis podem mudar ao longo do tempo. Para avaliar o estado atual com base no histórico de evidências e prever os resultados das ações de tratamento, precisamos modelar essas mudanças. Um exemplo desses problemas seria um paciente com suspeita de diabetes pode ter sua condição monitorada pelo nível de insulina, alimentos ingeridos, etc. Mas seu estado muda com o tempo!​ [1]

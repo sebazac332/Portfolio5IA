@@ -323,7 +323,7 @@ O pressuposto fundamental do Naive Bayes é que cada recurso faz uma análise:
 - **Os recursos são igualmente importantes:** presume-se que todos os recursos contribuam igualmente para a previsão do rótulo da classe. [7]
 - **Não há dados ausentes:** Os dados não devem conter valores ausentes. [7]
 
-### Aplicações do classificador Naive Bayes
+### Aplicações do Bayes Ingênuo​
 
 - **Filtragem de e-mails de spam:** Classifica e-mails como spam ou não spam com base em recursos. [7]
 - **Classificação de texto:** Usado na análise de sentimentos, categorização de documentos e classificação de tópicos. [7]
