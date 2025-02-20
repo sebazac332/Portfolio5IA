@@ -1,13 +1,12 @@
 site_name: Portfólio 5 de Inteligência Artificial
 
 markdown_extensions:
-  - pymdownx.arithmatex
-  - admonition
-  - toc:
-      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/MathJax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
    name: material 
@@ -24,7 +23,7 @@ theme:
 
 nav:
   - Impressões gerais: index.md
-  - incerteza: uncertaubty.md
+  - incerteza: uncertainty.md
   - Utilidade: utility.md
   - Teoria de Decisão: decision.md
   - Notação básica de probabilidade: basic_notation.md
@@ -35,7 +34,7 @@ nav:
   - Tempo e incerteza: time_uncertainty.md
   - Estados e observações: states_observations.md
   - Modelo de transição e modelos de sensores: transition_sensors.md
-  - Inferência em modelos temporais: inference.md
+  - Inferência em modelos temporais: temporal_inference.md
   - Modelo Oculto de Markov: hidden_markov.md
   - Filtros de Kalman: kalman_filter.md
   - Conclusões: conclusions.md

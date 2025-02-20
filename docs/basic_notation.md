@@ -38,7 +38,7 @@ Refere-se aos símbolos e convenções usados para representar e manipular proba
 
 Domínio composto por 3 variáveis A, B e C:
 
-|             |               B           |             ¬B            |
+|             |      B      |       B     |      ¬B     |     ¬B      |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 |             |       C     |     ¬C      |     C       |     ¬C      |
 |     A       |    0.108    |    0.012    |   0.072     |    0.008    |

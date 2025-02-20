@@ -37,10 +37,6 @@ Propriedade de independência condicional de A e B dada C:
 
 P(B ∧ C|A) = P(B|A)P(C|A)
 
-CAVITY - A
-TOOTHACHE - B
-CATCH - C
-
 Equação de probabilidade de independência pode ser inserida na equação acima:
 
 P(A|B ∧ C) = αP(B|A)P(C|A)P(A)

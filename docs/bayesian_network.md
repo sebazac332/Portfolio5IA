@@ -18,13 +18,13 @@ $$
 
 - Probabilidade conjunta das variáveis \( X_1, \dots, X_n \) pode ser fatorada como o produto das probabilidades condicionais de cada variável \( X_i \), dado o conjunto de seus pais no grafo de dependência.
 - Aqui parents(Xi) denota os valores de Parents(Xi) que aparecem em \( X_1, \dots, X_n \), cada entrada na distribuição conjunta é representada pelo produto dos elementos apropriados das distribuições condicionais locais na rede de Bayes.​
-- Suponha que uma rede de Bayes contenha \( n \) variáveis \( X_1, \dots, X_n \). Uma entrada genérica na distribuição conjunta é representada por \[P(X_1 = x_1 \wedge \dots \wedge X_n = x_n)\]. Ou, de forma abreviada \[P(x_1, \dots, x_n)\].
+- Suponha que uma rede de Bayes contenha \( n \) variáveis \( X_1, \dots, X_n \). Uma entrada genérica na distribuição conjunta é representada por \(P(X_1 = x_1 \wedge \dots \wedge X_n = x_n)\). Ou, de forma abreviada \(P(x_1, \dots, x_n)\).
 
 **Exemplo de uso:**
 
 P(j,m,a,¬b,¬e) = P(j|a)P(m|a)P(a|¬b∧¬e)P(¬b)P(¬e) = 0.90 × 0.70 × 0.01 × 0.999 × 0.998 = 0.00628
 
-Os números que entram nas distribuições condicionais locais \( \theta(x_i \mid \text{parents}(X_i)) \) são exatamente as probabilidades condicionais \[P(x_i \mid \text{parents}(X_i))\] implícitas na distribuição conjunta que podem ser calculadas a partir da distribuição conjunta da seguinte forma. [1]
+Os números que entram nas distribuições condicionais locais \( \theta(x_i \mid \text{parents}(X_i)) \) são exatamente as probabilidades condicionais \(P(x_i \mid \text{parents}(X_i))\) implícitas na distribuição conjunta que podem ser calculadas a partir da distribuição conjunta da seguinte forma. [1]
 
 \[
 P(x_i \mid \text{parents}(X_i)) \equiv \frac{P(x_i, \text{parents}(X_i))}{P(\text{parents}(X_i))}
@@ -39,7 +39,7 @@ P(x_i \mid \text{parents}(X_i)) =
 \]
 
 - Em que y representa os valores de todas as variáveis que não sejam Xi e seus pais.
-- A partir dessa última linha, é possível provar que \[P(x_i \mid \text{parents}(X_i))\] = \( \theta(x_i \mid \text{parents}(X_i)) \)
+- A partir dessa última linha, é possível provar que \(P(x_i \mid \text{parents}(X_i))\) = \( \theta(x_i \mid \text{parents}(X_i)) \)
 
 Levando em conta estes dois pontos, pode-se dizer que:
 
@@ -73,15 +73,15 @@ Essa identidade é chamada de regra da cadeia. Ela é válida para qualquer conj
 P(X_i \mid X_{i-1}, \dots, X_1) = P(X_i \mid \text{Parents}(X_i))
 \]
 
-Isso só se aplica se \[\text{Parents}(X_i) \subseteq \{ X_{i-1}, \dots, X_1 \}\]. Essa última condição é satisfeita ao numerar os nós da ordem topológica em ordem topológica, ou seja, em qualquer ordem consistente com a estrutura do gráfico direcionado. [1]
+Isso só se aplica se \(\text{Parents}(X_i) \subseteq \{ X_{i-1}, \dots, X_1 \}\). Essa última condição é satisfeita ao numerar os nós da ordem topológica em ordem topológica, ou seja, em qualquer ordem consistente com a estrutura do gráfico direcionado. [1]
 
 **Metodologia:**
 
-- **Nós:** Primeiro, determine o conjunto de variáveis necessárias para modelar o domínio. Agora, ordene-as, \[\{X_1, \dots, X_n\}\]. Qualquer ordem funcionará, mas a rede resultante será mais compacta se as variáveis forem ordenadas de forma que as causas precedam os efeitos. [1]
+- **Nós:** Primeiro, determine o conjunto de variáveis necessárias para modelar o domínio. Agora, ordene-as, \(\{X_1, \dots, X_n\}\). Qualquer ordem funcionará, mas a rede resultante será mais compacta se as variáveis forem ordenadas de forma que as causas precedam os efeitos. [1]
 - **Links:** De i = 1 até n faça:
-    - Escolha um conjunto mínimo de pais para \( X_i \) de \[X_1, \dots, X_{i-1}\], de modo que a equação \[P(X_i \mid X_{i-1}, \dots, X_1) = P(X_i \mid \text{Parents}(X_i))\] seja satisfeita. [1]
+    - Escolha um conjunto mínimo de pais para \( X_i \) de \(X_1, \dots, X_{i-1}\), de modo que a equação \(P(X_i \mid X_{i-1}, \dots, X_1) = P(X_i \mid \text{Parents}(X_i))\) seja satisfeita. [1]
     - Para cada pai, insira um link do pai para \( X_i \). [1]
-    - CPTs: Escreva a tabela de probabilidade condicional, \[P(X_i \mid \text{Parents}(X_i))\]. [1]
+    - CPTs: Escreva a tabela de probabilidade condicional, \(P(X_i \mid \text{Parents}(X_i))\). [1]
 
 - Como cada nó está conectado apenas aos nós anteriores, este método de construção garante que a rede é acíclica.
 - Outra propriedade importante das redes de Bayes é que elas não contêm valores de probabilidade redundantes;.

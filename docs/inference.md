@@ -5,7 +5,7 @@ A inferência em redes bayesianas envolve a resposta a consultas probabilística
 - **Marginalização:** Determinar a distribuição de probabilidade de um subconjunto de variáveis, ignorando os valores de todas as outras variáveis. [9]
 - **Probabilidade condicional:** Computação da distribuição de probabilidade de um subconjunto de variáveis com base em evidências observadas em outras variáveis. [9]
 
-Matematicamente, se X são as variáveis de consulta e E são as variáveis de evidência com valores observados e, o objetivo é calcular \[P(X \mid E = e)\].
+Matematicamente, se X são as variáveis de consulta e E são as variáveis de evidência com valores observados e, o objetivo é calcular \(P(X \mid E = e)\).
 
 ## Inferência Exata
 
@@ -23,7 +23,7 @@ A eliminação de variáveis é uma técnica popular de inferência exata que re
 - **Eliminação:** Eliminar sequencialmente cada variável não relacionada à consulta e não relacionada à evidência, somando seus valores. Essa etapa reduz a dimensionalidade do problema. [9]
 - **Normalização:** Após todas as eliminações, normalize a distribuição resultante para garantir que a soma seja igual a um. [9]
 
-**Representação matemática:** Para calcular \[P(X \mid E = e)\], talvez seja necessário somar uma variável Z que não esteja em X ou E: \[P(X \mid E = e) = \alpha \sum_Z P(X, Z, E = e)\] em que α é uma constante de normalização. [9]
+**Representação matemática:** Para calcular \(P(X \mid E = e)\), talvez seja necessário somar uma variável Z que não esteja em X ou E: \(P(X \mid E = e) = \alpha \sum_Z P(X, Z, E = e)\) em que α é uma constante de normalização. [9]
 
 #### Algoritmo de árvore de junção
 

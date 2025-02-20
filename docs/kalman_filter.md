@@ -11,12 +11,12 @@ O filtro de Kalman é um algoritmo recursivo ideal que estima o estado do sistem
     - **Estimativa inicial do estado (X₀):** Melhor suposição do estado inicial.
     - **Matriz de covariância do erro inicial (P₀):** Define a incerteza inicial da estimativa.
 - **Etapa de previsão:** Prever o próximo estado e a covariância usando o modelo de transição de estado. [13]
-    - **Previsão do estado:** \[\hat{X}_t^- = A \hat{X}_{t-1} + B U_t\].
-    - **Previsão da covariância:** \[P_t^- = A P_{t-1} A^T + Q\].
+    - **Previsão do estado:** \(\hat{X}_t^- = A \hat{X}_{t-1} + B U_t\).
+    - **Previsão da covariância:** \(P_t^- = A P_{t-1} A^T + Q\).
 - **Etapa de atualização:** Incorporar a nova medição para atualizar a estimativa do estado e a covariância. [13]
     - \[K_t = P_t^- H^T (H P_t^- H^T + R)^{-1}\]
     - \[\hat{X}_t = \hat{X}_t^- + K_t (Z_t - H \hat{X}_t^-)\]
     - \[P_t = (I - K_t H) P_t^-\]
     - (\( K_t \)) e o Ganho de Kalman.
-    - \[ Z_t - H \hat{X}_t^-\] é a inovação, ou erro de medição.
+    - \(Z_t - H \hat{X}_t^-\) é a inovação, ou erro de medição.
 - **Repetir:** Iterar as etapas de previsão e atualização para cada medição subsequente. [13]
