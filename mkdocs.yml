@@ -24,4 +24,19 @@ theme:
 
 nav:
   - Impressões gerais: index.md
+  - incerteza: uncertaubty.md
+  - Utilidade: utility.md
+  - Teoria de Decisão: decision.md
+  - Notação básica de probabilidade: basic_notation.md
+  - Independência e independência condicional: independence.md
+  - Regra de Bayes, aplicações e modelo ingênuo: bayes_rule.md
+  - Redes Bayesianas: bayesian_network.md
+  - Inferência: inference.md
+  - Tempo e incerteza: time_uncertainty.md
+  - Estados e observações: states_observations.md
+  - Modelo de transição e modelos de sensores: transition_sensors.md
+  - Inferência em modelos temporais: inference.md
+  - Modelo Oculto de Markov: hidden_markov.md
+  - Filtros de Kalman: kalman_filter.md
+  - Conclusões: conclusions.md
   - Referencias: references.md

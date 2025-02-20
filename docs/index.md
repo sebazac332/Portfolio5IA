@@ -1,3 +1,3 @@
 # Impressões gerais
 
-Colocar aqui impressões gerais para o portfólio 5.
+Nesta unidade veremos algoritmos mais direcionados à previsão de eventos no futuro, geralmente baseados em eventos passados para inferir o que vai acontecer, Você também verá princípios básicos de estatística e quais são as formas em que esses algoritmos tomam decisões quando encontram incertezas. Os algoritmos específicos que vimos são Redes Bayesianas, Modelo Oculto de Markov e Filtros de Kalman.
